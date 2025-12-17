@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
-const API_URL = "https://expert-spork-xq4jgpgpv9r3p6jq-8000.app.github.dev"
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
 
 export default function WarehouseRobotDemo() {
   const [locations, setLocations] = useState<any[]>([])
